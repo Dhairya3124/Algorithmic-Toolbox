@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-//using namespace std;
 #define ll long long int 
 
 ll  fibonacci_fast(ll  n) {
@@ -16,15 +15,9 @@ ll  fibonacci_fast(ll  n) {
 
     return v[n];
 }
-/*
-void test_solution() {
-    assert(fibonacci_fast(3) == 2);
-    assert(fibonacci_fast(10) == 55);
-    for (int n = 0; n < 20; ++n)
-        assert(fibonacci_fast(n) == fibonacci_naive(n));
-}
-*/
-int main() {
+
+
+    int main() {
     ll n = 0;
     std::cin >> n;
 
