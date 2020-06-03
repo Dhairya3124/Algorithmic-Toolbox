@@ -27,7 +27,7 @@ ll get_fibonacci_huge_naive(ll n, ll m) {
 }
 
 int main() {
-    ll n, m;
-    std::cin >> n >> m;
-    std::cout << get_fibonacci_huge_naive(n, m) << '\n';
+    ll n;
+    std::cin >> n;
+    std::cout << (get_fibonacci_huge_naive(n+1, 10)*get_fibonacci_huge_naive(n,10) )%10 << '\n';
 }

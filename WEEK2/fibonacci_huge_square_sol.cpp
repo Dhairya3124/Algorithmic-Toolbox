@@ -25,17 +25,9 @@ ll get_fibonacci_huge_naive(ll n, ll m) {
 	}
 	return ans%m;
 }
-ll solve(ll n)
-{
-	ll n2 = get_fibonacci_huge_naive(n+2,10);
-	ll n1 = get_fibonacci_huge_naive(2,10);
-	if(n2>=n1)
-		return n2-n1;
-	else
-		return (10+n2)-n1;
-}
+
 int main() {
     ll n;
-    std::cin >> n ;
-    std::cout << solve(n) << '\n';
+    std::cin >> n;
+    std::cout << (get_fibonacci_huge_naive(n+1, 10)*get_fibonacci_huge_naive(n,10) )%10 << '\n';
 }
