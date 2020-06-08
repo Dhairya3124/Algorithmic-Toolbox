@@ -6,7 +6,6 @@ using std::vector;
 
 int binary_search(const vector<int> &a, int x) {
   int left = 0, right = (int)a.size(); 
-  //write your code here
   while(right>=left)
   {
 	  int mid = left + (right - left)/2;
